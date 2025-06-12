@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "856b12c8-ed47-4533-9efa-0cf5940d9191",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45020517",
+		"_collection_link": "https://kailash-5962841.postman.co/workspace/Kailash's-Workspace~b2569518-66af-46c5-8573-12ff2d1e745c/collection/45020517-856b12c8-ed47-4533-9efa-0cf5940d9191?action=share&source=collection_link&creator=45020517"
+	},
+	"item": [
+		{
+			"name": "http://20.244.56.144/evaluation-service/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"2203a52174@sru.edu.in\",\r\n  \"name\": \"SATKURI KAILASH\",\r\n  \"mobileno\": \"8309740721\",\r\n  \"githubusername\": \"KailashSatkuriwarangal\",\r\n  \"rollno\": \"2203A5217\",\r\n  \"collegename\": \"SR University\",\r\n  \"accesscode\": \"MVGwEF\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/register",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://20.244.56.144/evaluation-service/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"2203a52174@sru.edu.in\",\r\n  \"name\": \"SATKURI KAILASH\",\r\n  \"mobileno\": \"8309740721\",\r\n  \"githubusername\": \"KailashSatkuri-warangal\",\r\n  \"rollno\": \"2203A5217\",\r\n  \"collegename\": \"SR University\",\r\n  \"accesscode\": \"MVGwEF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://20.244.56.144/evaluation-service/register",
+							"protocol": "http",
+							"host": [
+								"20",
+								"244",
+								"56",
+								"144"
+							],
+							"path": [
+								"evaluation-service",
+								"register"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jun 2025 05:25:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, OPTIONS, GET, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Trace-Id",
+							"value": "024191e5-d949-458a-b341-1ff9bcfc4211"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"github username already exists\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzA2MzQxLCJpYXQiOjE3NDk3MDYwNDEsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.2H79Hb7X-08XLoG9-XpYJmhHeYR1q0XcfIT14JA7qNs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"2203a52174@sru.edu.in\",\r\n  \"name\": \"SATKURI KAILASH\",\r\n  \"rollno\": \"2203a5217\",\r\n  \"accessCode\": \"MVGwEF\",\r\n  \"clientID\": \"d937eea2-57e6-4c8d-aaf4-8057c23cfc95\",\r\n  \"clientSecret\": \"TVQBEdaXKSWPRfax\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/auth",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/stocks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzA3MTI2LCJpYXQiOjE3NDk3MDY4MjYsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.QEGxWiv7RKygeW1hQRfoCugWTlBzLOrfLrae63V_FmQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"stocks\": {\r\n    \"Advanced Micro Devices, Inc.\": \"AMD\",\r\n    \"Alphabet Inc. Class A\": \"GOOGL\",\r\n    \"Alphabet Inc. Class C\": \"GOOG\",\r\n    \"Amazon.com, Inc.\": \"AMZN\",\r\n    \"Amgen Inc.\": \"AMGN\",\r\n    \"Apple Inc.\": \"AAPL\",\r\n    \"Berkshire Hathaway Inc.\": \"BRKB\",\r\n    \"Booking Holdings Inc.\": \"BKNG\",\r\n    \"Broadcom Inc.\": \"AVGO\",\r\n    \"CSX Corporation\": \"CSX\",\r\n    \"Eli Lilly and Company\": \"LLY\",\r\n    \"Marriott International, Inc.\": \"MAR\",\r\n    \"Marvell Technology, Inc.\": \"MRVL\",\r\n    \"Meta Platforms, Inc.\": \"META\",\r\n    \"Microsoft Corporation\": \"MSFT\",\r\n    \"Nvidia Corporation\": \"NVDA\",\r\n    \"PayPal Holdings, Inc.\": \"PYPL\",\r\n    \"TSMC\": \"2330TW\",\r\n    \"Tesla, Inc.\": \"TSLA\",\r\n    \"Visa Inc.\": \"V\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/stocks",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"stocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/rand",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzEwNTUyLCJpYXQiOjE3NDk3MTAyNTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.rFY_0S1VWf6xOcERfQpibn8TZIVD9k4OfStYBnuoWIk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/rand",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"rand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/even",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzEwNTUyLCJpYXQiOjE3NDk3MTAyNTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.rFY_0S1VWf6xOcERfQpibn8TZIVD9k4OfStYBnuoWIk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/even",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"even"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/fibo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzEwNTUyLCJpYXQiOjE3NDk3MTAyNTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.rFY_0S1VWf6xOcERfQpibn8TZIVD9k4OfStYBnuoWIk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/fibo",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"fibo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/primes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzEwNTUyLCJpYXQiOjE3NDk3MTAyNTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.rFY_0S1VWf6xOcERfQpibn8TZIVD9k4OfStYBnuoWIk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/primes",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"primes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9876/numbers/e",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzA3NTIwLCJpYXQiOjE3NDk3MDcyMjAsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.Qz8qRpyCzV-FSi3SGfVvF7vKJSvjqXe6ojy1dWnoDHQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9876/numbers/e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9876",
+					"path": [
+						"numbers",
+						"e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/stocks/NVDA?minutes=50",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzA3NTIwLCJpYXQiOjE3NDk3MDcyMjAsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.Qz8qRpyCzV-FSi3SGfVvF7vKJSvjqXe6ojy1dWnoDHQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/stocks/NVDA?minutes=50",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"stocks",
+						"NVDA"
+					],
+					"query": [
+						{
+							"key": "minutes",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://20.244.56.144/evaluation-service/stocks/NVDA",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ5NzA3NTIwLCJpYXQiOjE3NDk3MDcyMjAsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5MzdlZWEyLTU3ZTYtNGM4ZC1hYWY0LTgwNTdjMjNjZmM5NSIsInN1YiI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiJ9LCJlbWFpbCI6IjIyMDNhNTIxNzRAc3J1LmVkdS5pbiIsIm5hbWUiOiJzYXRrdXJpIGthaWxhc2giLCJyb2xsTm8iOiIyMjAzYTUyMTciLCJhY2Nlc3NDb2RlIjoiTVZHd0VGIiwiY2xpZW50SUQiOiJkOTM3ZWVhMi01N2U2LTRjOGQtYWFmNC04MDU3YzIzY2ZjOTUiLCJjbGllbnRTZWNyZXQiOiJUVlFCRWRhWEtTV1BSZmF4In0.Qz8qRpyCzV-FSi3SGfVvF7vKJSvjqXe6ojy1dWnoDHQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://20.244.56.144/evaluation-service/stocks/NVDA",
+					"protocol": "http",
+					"host": [
+						"20",
+						"244",
+						"56",
+						"144"
+					],
+					"path": [
+						"evaluation-service",
+						"stocks",
+						"NVDA"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
